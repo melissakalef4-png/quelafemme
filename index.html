@@ -308,6 +308,19 @@
     .js .home-about-inner>div:last-child,.js .area-tags,.js .contact-info,.js form,
     .js .page-hero .inner>*,.js .page-cta>.wrap>*{opacity:1!important;transform:none!important;transition:none!important;}
   }
+
+  /* ---------- Photo heroes ---------- */
+  @keyframes qlf-kenburns{0%{transform:scale(1.02);}100%{transform:scale(1.16);}}
+  .hero::before{display:none;}
+  .hero-bg{position:absolute;inset:0;z-index:0;background:url("img/hero.jpg") center/cover no-repeat;transform-origin:62% 42%;animation:qlf-kenburns 34s ease-in-out infinite alternate;}
+  .hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(13,14,17,.95) 0%,rgba(13,14,17,.74) 46%,rgba(13,14,17,.42) 100%),linear-gradient(0deg,rgba(13,14,17,.78),transparent 48%);}
+  .hero-inner{z-index:2;}
+  .hero::after{z-index:3;}
+  #maintenance .page-hero{background:linear-gradient(90deg,rgba(13,14,17,.94) 0%,rgba(13,14,17,.68) 55%,rgba(13,14,17,.52) 100%),url("img/maintenance.jpg") center/cover no-repeat;}
+  #organization .page-hero{background:linear-gradient(90deg,rgba(13,14,17,.94) 0%,rgba(13,14,17,.68) 55%,rgba(13,14,17,.52) 100%),url("img/organization.jpg") center/cover no-repeat;}
+  #estates .page-hero{background:linear-gradient(90deg,rgba(13,14,17,.94) 0%,rgba(13,14,17,.68) 55%,rgba(13,14,17,.52) 100%),url("img/estates.jpg") center/cover no-repeat;}
+  #maintenance .page-hero::before,#organization .page-hero::before,#estates .page-hero::before{display:none;}
+  @media(prefers-reduced-motion:reduce){.hero-bg{animation:none;}}
 </style>
 <script>document.documentElement.classList.add('js');</script>
 </head>
@@ -459,6 +472,8 @@
 <a id="top"></a>
 <main id="view-home">
 <section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
   <div class="hero-inner">
     <div>
       <span class="kicker">Downtown Toronto · By Appointment</span>
