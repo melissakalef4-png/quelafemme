@@ -321,6 +321,26 @@
   #estates .page-hero{background:linear-gradient(90deg,rgba(13,14,17,.94) 0%,rgba(13,14,17,.68) 55%,rgba(13,14,17,.52) 100%),url("img/estates.jpg") center/cover no-repeat;}
   #maintenance .page-hero::before,#organization .page-hero::before,#estates .page-hero::before{display:none;}
   @media(prefers-reduced-motion:reduce){.hero-bg{animation:none;}}
+
+  /* Bookkeeping banner (detail page) */
+  #bookkeeping .page-hero{background:linear-gradient(90deg,rgba(13,14,17,.94) 0%,rgba(13,14,17,.68) 55%,rgba(13,14,17,.52) 100%),url("img/bookkeeping.jpg") center/cover no-repeat;}
+  #bookkeeping .page-hero::before{display:none;}
+
+  /* Section-page top banners */
+  .route.has-banner{padding-top:0;}
+  .route.has-banner>.wrap{padding-top:72px;}
+  .sec-banner{position:relative;height:clamp(220px,40vh,420px);background:#0d0e11 center/cover no-repeat;border-bottom:1px solid var(--line-dark);}
+  .sec-banner::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(13,14,17,.55),rgba(13,14,17,.10) 45%,rgba(13,14,17,.35));}
+  #why .sec-banner{background-image:url("img/approach.jpg");}
+  #about .sec-banner{background-image:url("img/about-band.jpg");}
+  #contact .sec-banner{background-image:url("img/contact.jpg");}
+
+  /* Full-width parallax texture band (landing) */
+  .band{position:relative;padding:0;min-height:clamp(240px,44vh,440px);display:grid;place-items:center;text-align:center;background:#0d0e11 center/cover no-repeat;background-attachment:fixed;border-top:1px solid var(--line-dark);border-bottom:1px solid var(--line-dark);}
+  .band::after{content:"";position:absolute;inset:0;background:rgba(13,14,17,.5);}
+  .band .wrap{position:relative;z-index:1;}
+  .band-line{font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:400;font-size:clamp(1.9rem,4vw,3.1rem);color:#fff;margin:0;}
+  @media(max-width:880px){.band{background-attachment:scroll;}}
 </style>
 <script>document.documentElement.classList.add('js');</script>
 </head>
@@ -548,6 +568,10 @@
   </div>
 </section>
 
+<section class="band" style="background-image:url('img/band-marble.jpg')">
+  <div class="wrap"><p class="band-line">Held to a single standard.</p></div>
+</section>
+
 <section class="home-about">
   <div class="wrap home-about-inner">
     <div class="ha-photo"><img src="founder.png" alt="Melissa Kalef, founder of Que La Femme" /></div>
@@ -636,7 +660,8 @@
   </div>
 </section>
 
-<section class="route why" id="why">
+<section class="route why has-banner" id="why">
+  <div class="sec-banner"></div>
   <div class="wrap">
     <div class="section-head">
       <span class="kicker">The Approach</span>
@@ -663,7 +688,8 @@
   </div>
 </section>
 
-<section class="route about" id="about">
+<section class="route about has-banner" id="about">
+  <div class="sec-banner"></div>
   <div class="wrap about-inner">
     <div class="frame"><img src="founder.png" alt="Melissa Kalef, founder of Que La Femme" /></div>
     <div>
@@ -696,7 +722,8 @@
   </div>
 </section>
 
-<section class="route contact" id="contact">
+<section class="route contact has-banner" id="contact">
+  <div class="sec-banner"></div>
   <div class="wrap contact-inner">
     <div class="contact-info">
       <span class="kicker">Enquiries</span>
