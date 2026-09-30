@@ -77,7 +77,13 @@
   /* ---------- Header ---------- */
   header.site{position:sticky;top:0;z-index:60;background:rgba(13,14,17,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line-dark);}
   .nav{display:flex;align-items:center;justify-content:space-between;padding:20px 32px;max-width:var(--max);margin:0 auto;}
-  .brand{display:flex;align-items:center;gap:13px;text-decoration:none;color:#fff;}
+  .brand{display:flex;align-items:center;gap:13px;text-decoration:none;color:#fff;position:relative;}
+  .name-tip{position:absolute;top:calc(100% + 12px);left:0;white-space:nowrap;background:var(--charcoal-2,#1c1f26);color:var(--platinum);border:1px solid var(--steel-2);padding:8px 14px;font-family:"Inter",sans-serif;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;font-weight:500;opacity:0;transform:translateY(-6px);pointer-events:none;transition:opacity .28s ease,transform .28s ease;z-index:60;box-shadow:0 14px 40px rgba(0,0,0,.5);}
+  .name-tip::before{content:"";position:absolute;bottom:100%;left:22px;border:6px solid transparent;border-bottom-color:var(--steel-2);}
+  .brand:hover .name-tip,.brand:focus-visible .name-tip,.brand.tip-open .name-tip{opacity:1;transform:translateY(0);}
+  footer .brand .name-tip{top:auto;bottom:calc(100% + 12px);transform:translateY(6px);}
+  footer .brand:hover .name-tip,footer .brand:focus-visible .name-tip,footer .brand.tip-open .name-tip{transform:translateY(0);}
+  footer .name-tip::before{bottom:auto;top:100%;border-bottom-color:transparent;border-top-color:var(--steel-2);}
   .brand .mark{width:38px;height:38px;border:1px solid var(--steel-2);display:grid;place-items:center;font-family:"Cormorant Garamond",serif;font-size:1.4rem;color:#fff;}
   .brand .bname{font-family:"Cormorant Garamond",serif;font-size:1.3rem;letter-spacing:.16em;text-transform:uppercase;font-weight:500;}
   .nav-links{display:flex;gap:34px;align-items:center;}
@@ -423,7 +429,7 @@
 
 <header class="site">
   <div class="nav">
-    <a href="#top" class="brand"><span class="mark">Q</span><span class="bname">Que&nbsp;La&nbsp;Femme</span></a>
+    <a href="#top" class="brand"><span class="mark">Q</span><span class="bname">Que&nbsp;La&nbsp;Femme</span><span class="name-tip">Say it aloud — Kalef, M.</span></a>
     <nav class="nav-links" id="navLinks">
       <a href="#top">Home</a>
       <a href="#services">Services</a>
@@ -924,7 +930,7 @@
   <div class="wrap">
     <div class="footer-inner">
       <div>
-        <a href="#top" class="brand"><span class="mark">Q</span><span class="bname">Que&nbsp;La&nbsp;Femme</span></a>
+        <a href="#top" class="brand"><span class="mark">Q</span><span class="bname">Que&nbsp;La&nbsp;Femme</span><span class="name-tip">Say it aloud — Kalef, M.</span></a>
         <p>Cleaning · Organization · Estates · Bookkeeping</p>
         <p>Toronto &amp; the Greater Toronto Area</p>
       </div>
@@ -952,6 +958,20 @@
     a.addEventListener('click',function(){document.getElementById('navLinks').classList.remove('open');});
   });
   document.getElementById('year').textContent=new Date().getFullYear();
+
+  // Wordmark meaning: hover on desktop; first tap reveals, second tap navigates on touch
+  (function(){
+    var brands=[].slice.call(document.querySelectorAll('.brand'));
+    var canHover=window.matchMedia('(hover: hover)').matches;
+    function closeAll(except){brands.forEach(function(b){if(b!==except)b.classList.remove('tip-open');});}
+    brands.forEach(function(b){
+      b.addEventListener('click',function(e){
+        if(canHover)return; // desktop: hover shows it, click navigates normally
+        if(!b.classList.contains('tip-open')){e.preventDefault();closeAll(b);b.classList.add('tip-open');}
+      });
+    });
+    document.addEventListener('click',function(e){if(!e.target.closest('.brand'))closeAll(null);});
+  })();
 </script>
 
 <script>
