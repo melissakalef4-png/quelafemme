@@ -265,7 +265,7 @@
   .offer p{margin:0;color:var(--steel-2);font-weight:300;font-size:1.02rem;max-width:64ch;}
   .others{background:var(--charcoal);border-top:1px solid var(--line-dark);padding:72px 0;}
   .others .kicker{display:block;text-align:center;margin-bottom:34px;}
-  .others-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-dark);border:1px solid var(--line-dark);}
+  .others-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-dark);border:1px solid var(--line-dark);}
   .others-grid a{background:var(--charcoal);padding:32px 28px;text-decoration:none;transition:background .25s;display:block;}
   .others-grid a:hover{background:var(--ink);}
   .others-grid .n{font-family:"Cormorant Garamond",serif;color:var(--steel-2);font-size:.95rem;}
@@ -273,7 +273,7 @@
   .page-cta{background:var(--ink);text-align:center;padding:90px 0;}
   .page-cta h2{font-size:clamp(2rem,4.5vw,3rem);color:#fff;font-weight:400;margin:14px 0 26px;}
   .page-cta .btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
-  @media(max-width:880px){.offer{grid-template-columns:1fr;gap:10px;}.others-grid{grid-template-columns:1fr;}}
+  @media(max-width:880px){.offer{grid-template-columns:1fr;gap:10px;}.others-grid{grid-template-columns:1fr 1fr;}}
 
   /* ---------- Motion & luxury polish ---------- */
   @keyframes qlf-drift{0%{transform:translate3d(0,0,0) scale(1);}100%{transform:translate3d(-2.5%,1.5%,0) scale(1.07);}}
@@ -334,7 +334,7 @@
   #why .sec-banner{background-image:url("img/approach.jpg");}
   #about .sec-banner{background-image:url("img/about-band.jpg");}
   #contact .sec-banner{background-image:url("img/contact.jpg");}
-  #areas .sec-banner{background-image:url("img/coverage.jpg");background-position:center top;height:clamp(300px,54vh,580px);}
+  #areas .sec-banner{background-image:url("img/coverage.jpg");background-position:center top;height:clamp(260px,44vh,500px);}
 
   /* Full-width parallax texture band (landing) */
   .band{position:relative;padding:0;min-height:clamp(240px,44vh,440px);display:grid;place-items:center;text-align:center;background:#0d0e11 center/cover no-repeat;background-attachment:fixed;border-top:1px solid var(--line-dark);border-bottom:1px solid var(--line-dark);}
@@ -342,6 +342,23 @@
   .band .wrap{position:relative;z-index:1;}
   .band-line{font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:400;font-size:clamp(1.9rem,4vw,3.1rem);color:#fff;margin:0;}
   @media(max-width:880px){.band{background-attachment:scroll;}}
+
+  /* Estate Management banner (detail page) */
+  #estate-management .page-hero{background:linear-gradient(90deg,rgba(13,14,17,.94) 0%,rgba(13,14,17,.68) 55%,rgba(13,14,17,.52) 100%),url("img/band-marble.jpg") center/cover no-repeat;}
+  #estate-management .page-hero::before{display:none;}
+
+  /* Flagship feature card (Estate Sales) */
+  .feature{display:grid;grid-template-columns:1.15fr 1fr;border:1px solid var(--line-dark);text-decoration:none;color:inherit;background:var(--charcoal);overflow:hidden;margin-bottom:34px;transition:background .3s ease;}
+  .feature:hover{background:var(--charcoal-2);}
+  .feature-txt{padding:48px 46px;display:flex;flex-direction:column;justify-content:center;}
+  .feature-tag{align-self:flex-start;font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;color:var(--platinum);border:1px solid var(--steel-2);padding:6px 14px;margin-bottom:20px;}
+  .feature-txt h3{font-family:"Cormorant Garamond",serif;font-size:2.6rem;font-weight:500;color:#fff;margin:0 0 12px;}
+  .feature-txt p{color:var(--steel-2);font-weight:300;font-size:1.02rem;margin:0 0 24px;max-width:46ch;}
+  .feature-txt .more{font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--mist);}
+  .feature-txt .more .arw{display:inline-block;margin-left:8px;transition:transform .25s;}
+  .feature:hover .more .arw{transform:translateX(5px);}
+  .feature-img{background:#0d0e11 center/cover no-repeat;min-height:320px;}
+  @media(max-width:880px){.feature{grid-template-columns:1fr;}.feature-img{min-height:200px;order:-1;}.feature-txt{padding:30px 24px;}.feature-txt h3{font-size:2rem;}}
 
   /* Tighter vertical rhythm on mobile (less scrolling) */
   @media(max-width:880px){
@@ -407,8 +424,9 @@
   <div class="others"><div class="wrap">
     <span class="kicker">Also from the studio</span>
     <div class="others-grid">
+        <a href="#estates"><span class="n">Flagship</span><h4>Estate Sales</h4></a>
         <a href="#organization"><span class="n">02 — Order</span><h4>Home Organization</h4></a>
-        <a href="#estates"><span class="n">03 — Transition</span><h4>Estate Sales</h4></a>
+        <a href="#estate-management"><span class="n">03 — Estate</span><h4>Estate Management</h4></a>
         <a href="#bookkeeping"><span class="n">04 — Ledger</span><h4>Bookkeeping</h4></a>
     </div>
   </div></div>
@@ -438,8 +456,9 @@
   <div class="others"><div class="wrap">
     <span class="kicker">Also from the studio</span>
     <div class="others-grid">
+        <a href="#estates"><span class="n">Flagship</span><h4>Estate Sales</h4></a>
         <a href="#maintenance"><span class="n">01 — Maintenance</span><h4>Home Maintenance Services</h4></a>
-        <a href="#estates"><span class="n">03 — Transition</span><h4>Estate Sales</h4></a>
+        <a href="#estate-management"><span class="n">03 — Estate</span><h4>Estate Management</h4></a>
         <a href="#bookkeeping"><span class="n">04 — Ledger</span><h4>Bookkeeping</h4></a>
     </div>
   </div></div>
@@ -456,23 +475,53 @@
 <section class="route" id="estates">
   <div class="page-hero"><div class="inner">
     <a class="backlink" href="#services"><span class="arw">←</span> All Services</a>
-    <span class="kicker">03 — Transition</span>
-    <h1>Estate Sales &amp; Management</h1>
-    <p class="lede">Composed, confidential management of an entire estate — from the first careful sort to the final sale, donation, and clean-out. Whether you're settling a loved one's home or downsizing your own, every detail is handled with discretion, transparency, and the steadiness of a single point of contact — turning a daunting process into a managed one.</p>
+    <span class="kicker">Flagship Service</span>
+    <h1>Estate Sales</h1>
+    <p class="lede">The full, discreet management of an estate sale — from the first valuation to the final dollar. When a lifetime's belongings must become value, Que La Femme runs it end to end: appraised properly, presented beautifully, sold for what it's truly worth, and accounted for to the cent.</p>
   </div></div>
   <div class="detail"><div class="wrap">
       <div class="offer"><div class="idx">01</div><div><h3>Private Consultation &amp; Plan</h3><p>A discreet walkthrough of the home, an honest sense of what the estate holds, and a clear written plan and timeline — with no obligation to proceed.</p></div></div>
-      <div class="offer"><div class="idx">02</div><div><h3>Sorting, Cataloguing &amp; Keepsakes</h3><p>A respectful sort of a lifetime's belongings. Items promised to family or held dear are set aside first; everything else is catalogued before a single thing is sold.</p></div></div>
-      <div class="offer"><div class="idx">03</div><div><h3>Appraisal &amp; Valuation</h3><p>Fair-market valuation of furnishings, art, jewellery, and collectibles — with specialist appraisers brought in for exceptional pieces, so nothing of value is given away.</p></div></div>
-      <div class="offer"><div class="idx">04</div><div><h3>Staging &amp; Presentation</h3><p>The home arranged so the collection shows at its best and commands its true worth, whether buyers arrive in person or online.</p></div></div>
-      <div class="offer"><div class="idx">05</div><div><h3>The Estate Sale</h3><p>The sale itself, run end to end — pricing, promotion, buyer management, secure payment, and a full itemized account of every dollar.</p></div></div>
-      <div class="offer"><div class="idx">06</div><div><h3>Auction &amp; Consignment Liaison</h3><p>Standout pieces placed with the right auction house or consignor — quietly, and at the right moment — for the strongest possible return.</p></div></div>
-      <div class="offer"><div class="idx">07</div><div><h3>Downsizing &amp; Relocation</h3><p>For a move to a smaller home or a care residence: deciding what to keep, letting the rest go with grace, and settling you into the new space.</p></div></div>
-      <div class="offer"><div class="idx">08</div><div><h3>Donation, Clear-Out &amp; Handover</h3><p>Remaining items donated to charity with receipts arranged, then the home cleared and broom-swept — ready to list or hand over.</p></div></div>
+      <div class="offer"><div class="idx">02</div><div><h3>Appraisal &amp; Valuation</h3><p>Fair-market valuation of furnishings, art, jewellery, and collectibles — with specialist appraisers brought in for exceptional pieces, so nothing of value is given away.</p></div></div>
+      <div class="offer"><div class="idx">03</div><div><h3>Staging &amp; Presentation</h3><p>The home and its collection arranged to show at their best and command their true worth, whether buyers arrive in person or online.</p></div></div>
+      <div class="offer"><div class="idx">04</div><div><h3>The Estate Sale</h3><p>The sale itself, run end to end — pricing, promotion, buyer management, secure payment, and a full itemized account of every dollar.</p></div></div>
+      <div class="offer"><div class="idx">05</div><div><h3>Auction &amp; Consignment Liaison</h3><p>Standout pieces placed with the right auction house or consignor — quietly, and at the right moment — for the strongest possible return.</p></div></div>
   </div></div>
   <div class="others"><div class="wrap">
     <span class="kicker">Also from the studio</span>
     <div class="others-grid">
+        <a href="#maintenance"><span class="n">01 — Maintenance</span><h4>Home Maintenance Services</h4></a>
+        <a href="#organization"><span class="n">02 — Order</span><h4>Home Organization</h4></a>
+        <a href="#estate-management"><span class="n">03 — Estate</span><h4>Estate Management</h4></a>
+        <a href="#bookkeeping"><span class="n">04 — Ledger</span><h4>Bookkeeping</h4></a>
+    </div>
+  </div></div>
+  <div class="page-cta"><div class="wrap">
+    <span class="kicker">Enquiries</span>
+    <h2>Let&#39;s discuss your home</h2>
+    <div class="btns">
+      <a href="#contact" class="btn light">Request Consultation</a>
+      <a href="#services" class="btn outline-light">All Services</a>
+    </div>
+  </div></div>
+</section>
+
+<section class="route" id="estate-management">
+  <div class="page-hero"><div class="inner">
+    <a class="backlink" href="#services"><span class="arw">←</span> All Services</a>
+    <span class="kicker">03 — Estate</span>
+    <h1>Estate Management</h1>
+    <p class="lede">The calm handling of everything around an estate — the sorting, the downsizing, the giving, and the clearing. Whether you're settling a loved one's home or planning your own move, it's organized with discretion and care, one considered step at a time.</p>
+  </div></div>
+  <div class="detail"><div class="wrap">
+      <div class="offer"><div class="idx">01</div><div><h3>Sorting, Cataloguing &amp; Keepsakes</h3><p>A respectful sort of a lifetime's belongings. Items promised to family or held dear are set aside first; everything else is catalogued and organized.</p></div></div>
+      <div class="offer"><div class="idx">02</div><div><h3>Downsizing &amp; Relocation</h3><p>For a move to a smaller home or a care residence: deciding what to keep, letting the rest go with grace, and settling you into the new space.</p></div></div>
+      <div class="offer"><div class="idx">03</div><div><h3>Donation &amp; Clear-Out</h3><p>Remaining items donated to charity with receipts arranged, then the home cleared and broom-swept — ready to list or hand over.</p></div></div>
+      <div class="offer"><div class="idx">04</div><div><h3>Coordination &amp; Oversight</h3><p>A single, steady point of contact for executors and family — timelines kept, tradespeople coordinated, and the whole process quietly managed.</p></div></div>
+  </div></div>
+  <div class="others"><div class="wrap">
+    <span class="kicker">Also from the studio</span>
+    <div class="others-grid">
+        <a href="#estates"><span class="n">Flagship</span><h4>Estate Sales</h4></a>
         <a href="#maintenance"><span class="n">01 — Maintenance</span><h4>Home Maintenance Services</h4></a>
         <a href="#organization"><span class="n">02 — Order</span><h4>Home Organization</h4></a>
         <a href="#bookkeeping"><span class="n">04 — Ledger</span><h4>Bookkeeping</h4></a>
@@ -505,9 +554,10 @@
   <div class="others"><div class="wrap">
     <span class="kicker">Also from the studio</span>
     <div class="others-grid">
+        <a href="#estates"><span class="n">Flagship</span><h4>Estate Sales</h4></a>
         <a href="#maintenance"><span class="n">01 — Maintenance</span><h4>Home Maintenance Services</h4></a>
         <a href="#organization"><span class="n">02 — Order</span><h4>Home Organization</h4></a>
-        <a href="#estates"><span class="n">03 — Transition</span><h4>Estate Sales</h4></a>
+        <a href="#estate-management"><span class="n">03 — Estate</span><h4>Estate Management</h4></a>
     </div>
   </div></div>
   <div class="page-cta"><div class="wrap">
@@ -535,18 +585,19 @@
         <a href="#services" class="btn outline-light">View Services</a>
       </div>
       <div class="hero-meta">
-        <div><b>04</b><span>Disciplines</span></div>
+        <div><b>05</b><span>Services</span></div>
         <div><b>GTA</b><span>Coverage</span></div>
         <div><b>Private</b><span>&amp; Insured</span></div>
       </div>
     </div>
     <aside class="hero-panel">
       <h3>The Studio</h3>
-      <p>Four disciplines. One point of contact.</p>
+      <p>Five services. One point of contact.</p>
       <ul>
+        <li><a href="#estates">Estate Sales <span class="n">✦</span></a></li>
         <li><a href="#maintenance">Home Maintenance <span class="n">01</span></a></li>
         <li><a href="#organization">Organization <span class="n">02</span></a></li>
-        <li><a href="#estates">Estate Sales <span class="n">03</span></a></li>
+        <li><a href="#estate-management">Estate Management <span class="n">03</span></a></li>
         <li><a href="#bookkeeping">Bookkeeping <span class="n">04</span></a></li>
       </ul>
       <a href="#contact" class="btn light" style="width:100%;text-align:center;">Begin</a>
@@ -558,12 +609,21 @@
   <div class="wrap">
     <div class="section-head">
       <span class="kicker">Services</span>
-      <h2>Four disciplines, one standard</h2>
+      <h2>Our services, one standard</h2>
     </div>
+    <a class="feature" href="#estates">
+      <div class="feature-txt">
+        <span class="feature-tag">Flagship Service</span>
+        <h3>Estate Sales</h3>
+        <p>Our signature offering — the full, discreet management of an estate sale: appraised, staged, sold for its true worth, and accounted for to the cent.</p>
+        <span class="more">Explore Estate Sales<span class="arw">→</span></span>
+      </div>
+      <div class="feature-img" style="background-image:url('img/estates.jpg')"></div>
+    </a>
     <div class="preview-grid">
       <a class="preview" href="#maintenance"><span class="pnum">01</span><h3>Home Maintenance</h3><p>Cleaning, repairs, gardens, painting, small-space design &amp; moves.</p><span class="more">View<span class="arw">→</span></span></a>
       <a class="preview" href="#organization"><span class="pnum">02</span><h3>Home Organization</h3><p>Decluttering, closets &amp; kitchens, paper &amp; storage, lasting systems.</p><span class="more">View<span class="arw">→</span></span></a>
-      <a class="preview" href="#estates"><span class="pnum">03</span><h3>Estate Sales</h3><p>Valuation, staging, the sale, auction liaison &amp; clear-out.</p><span class="more">View<span class="arw">→</span></span></a>
+      <a class="preview" href="#estate-management"><span class="pnum">03</span><h3>Estate Management</h3><p>Sorting, downsizing, donation, clear-out &amp; estate coordination.</p><span class="more">View<span class="arw">→</span></span></a>
       <a class="preview" href="#bookkeeping"><span class="pnum">04</span><h3>Bookkeeping</h3><p>Monthly books, invoicing, reconciliations &amp; tax-season prep.</p><span class="more">View<span class="arw">→</span></span></a>
     </div>
     <div style="text-align:center;margin-top:44px;">
@@ -630,9 +690,18 @@
   <div class="wrap">
     <div class="section-head">
       <span class="kicker">Services</span>
-      <h2>Four disciplines, one standard</h2>
-      <p>From a weekly maintenance schedule to the full management of an estate, the work is precise, discreet, and handled directly.</p>
+      <h2>Our services, one standard</h2>
+      <p>From a weekly maintenance schedule to the full management of an estate sale, the work is precise, discreet, and handled directly.</p>
     </div>
+    <a class="feature" href="#estates">
+      <div class="feature-txt">
+        <span class="feature-tag">Flagship Service</span>
+        <h3>Estate Sales</h3>
+        <p>Our signature offering — the full, discreet management of an estate sale: appraised, staged, sold for its true worth, and accounted for to the cent.</p>
+        <span class="more">Explore Estate Sales<span class="arw">→</span></span>
+      </div>
+      <div class="feature-img" style="background-image:url('img/estates.jpg')"></div>
+    </a>
     <div class="service-grid">
 
       <a class="service" href="#maintenance">
@@ -661,15 +730,15 @@
         <span class="more">View details<span class="arw">→</span></span>
       </a>
 
-      <a class="service" href="#estates">
-        <div class="num">03 — Transition</div>
-        <h3>Estate Sales</h3>
-        <p>Composed, confidential handling of the estate and downsizing — organized from the first sort to the final sale.</p>
+      <a class="service" href="#estate-management">
+        <div class="num">03 — Estate</div>
+        <h3>Estate Management</h3>
+        <p>The calm handling of everything around an estate — sorting, downsizing, giving, and clearing, one considered step at a time.</p>
         <ul>
-          <li>Appraisal &amp; valuation</li>
-          <li>Full estate-sale management</li>
-          <li>Auction &amp; consignment liaison</li>
-          <li>Downsizing &amp; clear-outs</li>
+          <li>Sorting, cataloguing &amp; keepsakes</li>
+          <li>Downsizing &amp; relocation</li>
+          <li>Donation &amp; clear-out</li>
+          <li>Coordination &amp; oversight</li>
         </ul>
         <span class="more">View details<span class="arw">→</span></span>
       </a>
@@ -792,9 +861,10 @@
       <div class="field">
         <label for="service">Discipline</label>
         <select id="service" name="service">
+          <option>Estate Sales</option>
+          <option>Estate Management</option>
           <option>Home Maintenance Services</option>
           <option>Home Organization</option>
-          <option>Estate Sales</option>
           <option>Bookkeeping</option>
           <option>Undecided</option>
         </select>
