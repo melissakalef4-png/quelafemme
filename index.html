@@ -364,6 +364,32 @@
   .service-img{height:210px;margin:-44px -44px 30px;background:#0d0e11 center/cover no-repeat;border-bottom:1px solid var(--line-dark);}
   @media(max-width:880px){.service-img{height:180px;}}
 
+  /* Staggered service rows (image alternates left / right, like the flagship) */
+  .service-rows{display:flex;flex-direction:column;gap:1px;background:var(--line-dark);border:1px solid var(--line-dark);}
+  .srow{display:grid;grid-template-columns:1.05fr 1fr;background:var(--charcoal);text-decoration:none;color:inherit;overflow:hidden;transition:background .3s ease;}
+  .srow:hover{background:var(--charcoal-2);}
+  .srow-txt{padding:46px 48px;display:flex;flex-direction:column;justify-content:center;}
+  .srow-img{background:#0d0e11 center/cover no-repeat;min-height:340px;}
+  .srow .num{font-family:"Cormorant Garamond",serif;font-size:1rem;color:var(--steel-2);letter-spacing:.1em;}
+  .srow h3{font-size:2rem;margin:12px 0 12px;font-weight:500;color:#fff;}
+  .srow p{color:var(--steel-2);margin:0 0 22px;font-weight:300;font-size:1rem;max-width:48ch;}
+  .srow ul{list-style:none;margin:0;padding:0;}
+  .srow ul li{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--mist);padding:9px 0;border-top:1px solid var(--line-dark);}
+  .srow .more{display:inline-block;margin-top:24px;font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--steel-2);transition:color .25s;}
+  .srow .more .arw{display:inline-block;margin-left:8px;transition:transform .25s;}
+  .srow:hover .more{color:#fff;}
+  .srow:hover .more .arw{transform:translateX(5px);}
+  /* reversed rows: image on the left */
+  .srow.rev .srow-txt{order:2;}
+  .srow.rev .srow-img{order:1;}
+  @media(max-width:880px){
+    .srow{grid-template-columns:1fr;}
+    .srow-img{min-height:200px;order:-1!important;}
+    .srow.rev .srow-txt{order:0;}
+    .srow-txt{padding:32px 24px;}
+    .srow h3{font-size:1.7rem;}
+  }
+
   /* Tighter vertical rhythm on mobile (less scrolling) */
   @media(max-width:880px){
     section{padding:56px 0;}
@@ -706,62 +732,70 @@
       </div>
       <div class="feature-img" style="background-image:url('img/estate-sales.jpg')"></div>
     </a>
-    <div class="service-grid">
+    <div class="service-rows">
 
-      <a class="service" href="#maintenance">
-        <div class="service-img" style="background-image:url('img/maintenance.jpg')"></div>
-        <div class="num">01 — Maintenance</div>
-        <h3>Home Maintenance Services</h3>
-        <p>The full upkeep of a home — cleaning, repairs, gardens, painting, small-space design, and moves — held to one standard.</p>
-        <ul>
-          <li>House cleaning</li>
-          <li>Minor household repairs</li>
-          <li>Gardens &amp; seasonal clean-ups</li>
-          <li>Painting · small spaces · moves</li>
-        </ul>
-        <span class="more">View details<span class="arw">→</span></span>
+      <a class="srow rev" href="#maintenance">
+        <div class="srow-txt">
+          <div class="num">01 — Maintenance</div>
+          <h3>Home Maintenance Services</h3>
+          <p>The full upkeep of a home — cleaning, repairs, gardens, painting, small-space design, and moves — held to one standard.</p>
+          <ul>
+            <li>House cleaning</li>
+            <li>Minor household repairs</li>
+            <li>Gardens &amp; seasonal clean-ups</li>
+            <li>Painting · small spaces · moves</li>
+          </ul>
+          <span class="more">View details<span class="arw">→</span></span>
+        </div>
+        <div class="srow-img" style="background-image:url('img/maintenance.jpg')"></div>
       </a>
 
-      <a class="service" href="#organization">
-        <div class="service-img" style="background-image:url('img/organization.jpg')"></div>
-        <div class="num">02 — Order</div>
-        <h3>Home Organization</h3>
-        <p>Considered, functional order — spaces designed around how you actually live, then kept that way.</p>
-        <ul>
-          <li>Closets, pantries &amp; kitchens</li>
-          <li>Decluttering &amp; lasting systems</li>
-          <li>Paper &amp; storage solutions</li>
-          <li>Systems that hold</li>
-        </ul>
-        <span class="more">View details<span class="arw">→</span></span>
+      <a class="srow" href="#organization">
+        <div class="srow-txt">
+          <div class="num">02 — Order</div>
+          <h3>Home Organization</h3>
+          <p>Considered, functional order — spaces designed around how you actually live, then kept that way.</p>
+          <ul>
+            <li>Closets, pantries &amp; kitchens</li>
+            <li>Decluttering &amp; lasting systems</li>
+            <li>Paper &amp; storage solutions</li>
+            <li>Systems that hold</li>
+          </ul>
+          <span class="more">View details<span class="arw">→</span></span>
+        </div>
+        <div class="srow-img" style="background-image:url('img/organization.jpg')"></div>
       </a>
 
-      <a class="service" href="#estate-management">
-        <div class="service-img" style="background-image:url('img/estate-management.jpg')"></div>
-        <div class="num">03 — Estate</div>
-        <h3>Estate Management</h3>
-        <p>The calm handling of everything around an estate — sorting, downsizing, giving, and clearing, one considered step at a time.</p>
-        <ul>
-          <li>Sorting, cataloguing &amp; keepsakes</li>
-          <li>Downsizing &amp; relocation</li>
-          <li>Donation &amp; clear-out</li>
-          <li>Coordination &amp; oversight</li>
-        </ul>
-        <span class="more">View details<span class="arw">→</span></span>
+      <a class="srow rev" href="#estate-management">
+        <div class="srow-txt">
+          <div class="num">03 — Estate</div>
+          <h3>Estate Management</h3>
+          <p>The calm handling of everything around an estate — sorting, downsizing, giving, and clearing, one considered step at a time.</p>
+          <ul>
+            <li>Sorting, cataloguing &amp; keepsakes</li>
+            <li>Downsizing &amp; relocation</li>
+            <li>Donation &amp; clear-out</li>
+            <li>Coordination &amp; oversight</li>
+          </ul>
+          <span class="more">View details<span class="arw">→</span></span>
+        </div>
+        <div class="srow-img" style="background-image:url('img/estate-management.jpg')"></div>
       </a>
 
-      <a class="service" href="#bookkeeping">
-        <div class="service-img" style="background-image:url('img/bookkeeping.jpg')"></div>
-        <div class="num">04 — Ledger</div>
-        <h3>Bookkeeping</h3>
-        <p>Decades of corporate finance, applied to your books — clean, current, and quietly kept.</p>
-        <ul>
-          <li>Monthly bookkeeping</li>
-          <li>Invoicing &amp; expense tracking</li>
-          <li>Reconciliations &amp; reporting</li>
-          <li>Tax-season preparation</li>
-        </ul>
-        <span class="more">View details<span class="arw">→</span></span>
+      <a class="srow" href="#bookkeeping">
+        <div class="srow-txt">
+          <div class="num">04 — Ledger</div>
+          <h3>Bookkeeping</h3>
+          <p>Decades of corporate finance, applied to your books — clean, current, and quietly kept.</p>
+          <ul>
+            <li>Monthly bookkeeping</li>
+            <li>Invoicing &amp; expense tracking</li>
+            <li>Reconciliations &amp; reporting</li>
+            <li>Tax-season preparation</li>
+          </ul>
+          <span class="more">View details<span class="arw">→</span></span>
+        </div>
+        <div class="srow-img" style="background-image:url('img/bookkeeping.jpg')"></div>
       </a>
 
     </div>
