@@ -360,6 +360,10 @@
   .feature-img{background:#0d0e11 center/cover no-repeat;min-height:320px;}
   @media(max-width:880px){.feature{grid-template-columns:1fr;}.feature-img{min-height:200px;order:-1;}.feature-txt{padding:30px 24px;}.feature-txt h3{font-size:2rem;}}
 
+  /* Photos on service cards */
+  .service-img{height:210px;margin:-44px -44px 30px;background:#0d0e11 center/cover no-repeat;border-bottom:1px solid var(--line-dark);}
+  @media(max-width:880px){.service-img{height:180px;}}
+
   /* Tighter vertical rhythm on mobile (less scrolling) */
   @media(max-width:880px){
     section{padding:56px 0;}
@@ -705,6 +709,7 @@
     <div class="service-grid">
 
       <a class="service" href="#maintenance">
+        <div class="service-img" style="background-image:url('img/maintenance.jpg')"></div>
         <div class="num">01 — Maintenance</div>
         <h3>Home Maintenance Services</h3>
         <p>The full upkeep of a home — cleaning, repairs, gardens, painting, small-space design, and moves — held to one standard.</p>
@@ -718,6 +723,7 @@
       </a>
 
       <a class="service" href="#organization">
+        <div class="service-img" style="background-image:url('img/organization.jpg')"></div>
         <div class="num">02 — Order</div>
         <h3>Home Organization</h3>
         <p>Considered, functional order — spaces designed around how you actually live, then kept that way.</p>
@@ -731,6 +737,7 @@
       </a>
 
       <a class="service" href="#estate-management">
+        <div class="service-img" style="background-image:url('img/band-marble.jpg')"></div>
         <div class="num">03 — Estate</div>
         <h3>Estate Management</h3>
         <p>The calm handling of everything around an estate — sorting, downsizing, giving, and clearing, one considered step at a time.</p>
@@ -744,6 +751,7 @@
       </a>
 
       <a class="service" href="#bookkeeping">
+        <div class="service-img" style="background-image:url('img/bookkeeping.jpg')"></div>
         <div class="num">04 — Ledger</div>
         <h3>Bookkeeping</h3>
         <p>Decades of corporate finance, applied to your books — clean, current, and quietly kept.</p>
