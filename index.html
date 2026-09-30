@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Que La Femme — Cleaning, Organizing, Estates &amp; Bookkeeping | Toronto</title>
+<meta name="description" content="Que La Femme delivers discreet, meticulous home care for downtown Toronto and the GTA — house cleaning, home organization, estate management, and bookkeeping. Private. Precise. Professional." />
+<link rel="canonical" href="https://quelafemme.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Que La Femme" />
+<meta property="og:title" content="Que La Femme — Home Management Studio | Toronto" />
+<meta property="og:description" content="Discreet, meticulous home care for downtown Toronto and the GTA — cleaning, organization, estate management, and bookkeeping." />
+<meta property="og:url" content="https://quelafemme.com/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Que La Femme — Home Management Studio | Toronto" />
+<meta name="twitter:description" content="Discreet, meticulous home care for downtown Toronto and the GTA — cleaning, organization, estate management, and bookkeeping." />
+<meta property="og:image" content="https://quelafemme.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:image" content="https://quelafemme.com/og-image.png" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --ink:#0d0e11;
+    --charcoal:#16181d;
+    --charcoal-2:#1e2127;
+    --steel:#3a3f47;
+    --steel-2:#767c86;
+    --mist:#b9bec6;
+    --platinum:#e9ebee;
+    --platinum-2:#f4f5f7;
+    --line:#dcdfe4;
+    --line-dark:rgba(255,255,255,.12);
+    --white:#ffffff;
+    --sheen:linear-gradient(135deg,#eef0f2 0%,#aab0b8 42%,#4a4f57 100%);
+    --radius:3px;
+    --shadow:0 24px 60px rgba(13,14,17,.14);
+    --max:1180px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;font-family:"Inter",system-ui,sans-serif;color:var(--platinum);
+    background:var(--ink);line-height:1.7;font-weight:400;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;line-height:1.08;letter-spacing:0;}
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  .wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 32px;}
+
+  .kicker{
+    font-family:"Inter",sans-serif;font-size:.7rem;font-weight:500;
+    letter-spacing:.34em;text-transform:uppercase;color:var(--steel-2);
+    display:inline-block;
+  }
+
+  .btn{
+    display:inline-block;font-family:"Inter",sans-serif;font-size:.74rem;font-weight:500;
+    letter-spacing:.22em;text-transform:uppercase;text-decoration:none;
+    padding:16px 34px;border-radius:var(--radius);cursor:pointer;
+    background:var(--ink);color:#fff;border:1px solid var(--ink);
+    transition:background .25s ease,color .25s ease,transform .25s ease;
+  }
+  .btn:hover{transform:translateY(-2px);background:var(--charcoal-2);}
+  .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--steel);}
+  .btn.ghost:hover{background:var(--ink);color:#fff;}
+  .btn.light{background:#fff;color:var(--ink);border:1px solid #fff;}
+  .btn.light:hover{background:transparent;color:#fff;border-color:rgba(255,255,255,.5);}
+  .btn.outline-light{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35);}
+  .btn.outline-light:hover{background:#fff;color:var(--ink);}
+
+  /* ---------- Header ---------- */
+  header.site{position:sticky;top:0;z-index:60;background:rgba(13,14,17,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line-dark);}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:20px 32px;max-width:var(--max);margin:0 auto;}
+  .brand{display:flex;align-items:center;gap:13px;text-decoration:none;color:#fff;}
+  .brand .mark{width:38px;height:38px;border:1px solid var(--steel-2);display:grid;place-items:center;font-family:"Cormorant Garamond",serif;font-size:1.4rem;color:#fff;}
+  .brand .bname{font-family:"Cormorant Garamond",serif;font-size:1.3rem;letter-spacing:.16em;text-transform:uppercase;font-weight:500;}
+  .nav-links{display:flex;gap:34px;align-items:center;}
+  .nav-links a{text-decoration:none;color:var(--mist);font-size:.74rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;transition:color .2s;}
+  .nav-links a:hover{color:#fff;}
+  .nav-links a.navbtn{border:1px solid rgba(255,255,255,.3);padding:11px 20px;color:#fff;}
+  .nav-links a.navbtn:hover{background:#fff;color:var(--ink);}
+  .menu-toggle{display:none;background:none;border:none;color:#fff;font-size:1.5rem;cursor:pointer;}
+
+  /* ---------- Hero ---------- */
+  .hero{position:relative;background:var(--ink);color:#fff;overflow:hidden;}
+  .hero::before{content:"";position:absolute;inset:0;background:
+    radial-gradient(120% 90% at 78% 8%,rgba(150,158,168,.20),transparent 55%),
+    radial-gradient(90% 70% at 12% 100%,rgba(90,96,104,.18),transparent 60%);}
+  .hero::after{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:var(--sheen);opacity:.7;}
+  .hero-inner{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center;padding:104px 32px 112px;max-width:var(--max);margin:0 auto;}
+  .hero .kicker{color:var(--mist);}
+  .hero h1{font-size:clamp(3rem,6vw,5rem);margin:18px 0 22px;font-weight:400;letter-spacing:-.01em;}
+  .hero h1 em{font-style:italic;color:var(--mist);}
+  .hero .lede{font-size:1.12rem;color:var(--mist);max-width:46ch;margin:0 0 36px;font-weight:300;}
+  .hero-cta{display:flex;gap:16px;flex-wrap:wrap;}
+  .hero-meta{margin-top:40px;display:flex;gap:0;flex-wrap:wrap;border-top:1px solid var(--line-dark);padding-top:24px;}
+  .hero-meta div{padding-right:34px;margin-right:34px;border-right:1px solid var(--line-dark);}
+  .hero-meta div:last-child{border-right:none;}
+  .hero-meta b{display:block;font-family:"Cormorant Garamond",serif;font-size:1.7rem;font-weight:500;}
+  .hero-meta span{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--steel-2);}
+
+  .hero-panel{background:rgba(255,255,255,.04);border:1px solid var(--line-dark);backdrop-filter:blur(6px);padding:36px;}
+  .hero-panel h3{font-size:1.6rem;margin:0 0 4px;color:#fff;}
+  .hero-panel p{color:var(--steel-2);font-size:.82rem;letter-spacing:.04em;margin:0 0 22px;}
+  .hero-panel ul{list-style:none;padding:0;margin:0 0 26px;}
+  .hero-panel li{border-bottom:1px solid var(--line-dark);}
+  .hero-panel li:last-child{border-bottom:none;}
+  .hero-panel li a{display:flex;justify-content:space-between;align-items:center;padding:15px 2px;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--platinum);text-decoration:none;transition:color .2s,padding-left .2s;}
+  .hero-panel li a:hover{color:#fff;padding-left:9px;}
+  .hero-panel li a .n{color:var(--steel-2);font-family:"Cormorant Garamond",serif;font-size:1.1rem;letter-spacing:0;transition:color .2s;}
+  .hero-panel li a:hover .n{color:var(--mist);}
+
+  /* ---------- Sections ---------- */
+  section{padding:104px 0;}
+  .section-head{max-width:660px;margin:0 auto 64px;text-align:center;}
+  .section-head h2{font-size:clamp(2.2rem,4.5vw,3.2rem);margin:16px 0 0;font-weight:400;}
+  .section-head p{color:var(--steel-2);font-size:1.05rem;margin:18px auto 0;max-width:56ch;font-weight:300;}
+
+  /* Services */
+  .services{background:var(--ink);border-top:1px solid var(--line-dark);border-bottom:1px solid var(--line-dark);}
+  .service-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border:1px solid var(--line-dark);}
+  .service{display:block;text-decoration:none;color:inherit;padding:44px;border-right:1px solid var(--line-dark);border-bottom:1px solid var(--line-dark);position:relative;transition:background .3s ease;}
+  .service:nth-child(2n){border-right:none;}
+  .service:nth-child(n+3){border-bottom:none;}
+  .service:hover{background:var(--charcoal);}
+  .service .num{font-family:"Cormorant Garamond",serif;font-size:1rem;color:var(--steel-2);letter-spacing:.1em;}
+  .service h3{font-size:1.9rem;margin:14px 0 12px;font-weight:500;color:#fff;}
+  .service p{color:var(--steel-2);margin:0 0 20px;font-weight:300;font-size:.98rem;}
+  .service ul{list-style:none;margin:0;padding:0;}
+  .service ul li{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--mist);padding:9px 0;border-top:1px solid var(--line-dark);}
+  .service .more{display:inline-block;margin-top:24px;font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--steel-2);transition:color .25s;}
+  .service .more .arw{display:inline-block;margin-left:8px;transition:transform .25s;}
+  .service:hover .more{color:#fff;}
+  .service:hover .more .arw{transform:translateX(5px);}
+
+  /* Why */
+  .why{background:var(--charcoal);}
+  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-dark);border:1px solid var(--line-dark);}
+  .why-cell{background:var(--charcoal);padding:44px 34px;text-align:center;}
+  .why-cell .ic{width:44px;height:44px;margin:0 auto 22px;color:#fff;}
+  .why-cell .ic svg{width:100%;height:100%;}
+  .why-cell h3{font-size:1.5rem;margin:0 0 10px;font-weight:500;}
+  .why-cell p{color:var(--steel-2);margin:0;font-weight:300;font-size:.96rem;}
+
+  /* About */
+  .about{background:var(--ink);color:#fff;}
+  .about-inner{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:center;}
+  .about .frame{aspect-ratio:4/5;border:1px solid var(--steel);background:var(--charcoal);position:relative;overflow:hidden;}
+  .about .frame img{width:100%;height:100%;object-fit:cover;object-position:center 22%;display:block;filter:grayscale(100%) contrast(1.04) brightness(.98);transition:filter .4s ease;}
+  .about .frame:hover img{filter:grayscale(70%) contrast(1.03);}
+  .about .frame::after{content:"";position:absolute;top:12px;left:12px;right:12px;bottom:12px;border:1px solid var(--line-dark);pointer-events:none;}
+  .about h2{font-size:clamp(2.1rem,4.5vw,3rem);margin:16px 0 22px;font-weight:400;}
+  .about h2 em{font-style:italic;color:var(--mist);}
+  .about p{color:var(--mist);margin:0 0 18px;font-weight:300;font-size:1.05rem;}
+  .about .sign{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:1.4rem;color:#fff;margin-top:10px;}
+  .about .kicker{color:var(--steel-2);}
+
+  /* Areas */
+  .areas{background:var(--charcoal);color:#fff;text-align:center;}
+  .areas h2{font-size:clamp(2.1rem,4.5vw,3rem);margin:16px 0 18px;font-weight:400;}
+  .areas h2 em{font-style:italic;color:var(--mist);}
+  .areas > .wrap > p{color:var(--steel-2);max-width:60ch;margin:0 auto 34px;font-weight:300;}
+  .area-tags{display:flex;flex-wrap:wrap;gap:0;justify-content:center;max-width:900px;margin:0 auto;border:1px solid var(--line-dark);}
+  .area-tags span{padding:15px 26px;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mist);border-right:1px solid var(--line-dark);border-bottom:1px solid var(--line-dark);flex:1 1 auto;}
+
+  /* Testimonials */
+  .testimonials{background:var(--ink);border-top:1px solid var(--line-dark);}
+  .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-dark);border:1px solid var(--line-dark);}
+  .quote{background:var(--charcoal);padding:40px 34px;}
+  .quote .qm{font-family:"Cormorant Garamond",serif;font-size:2.6rem;line-height:.6;color:var(--steel-2);}
+  .quote p{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:1.28rem;line-height:1.4;color:#fff;margin:14px 0 22px;font-weight:400;}
+  .quote .who{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--steel-2);}
+
+  /* Contact */
+  .contact{background:var(--ink);}
+  .contact-inner{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:start;}
+  .contact-info h2{font-size:clamp(2.1rem,4.5vw,3rem);margin:16px 0 20px;font-weight:400;}
+  .contact-info > p{color:var(--steel-2);margin:0 0 34px;font-weight:300;font-size:1.05rem;}
+  .contact-list{list-style:none;padding:0;margin:0;}
+  .contact-list li{display:flex;gap:18px;align-items:center;padding:20px 0;border-top:1px solid var(--line-dark);}
+  .contact-list li:last-child{border-bottom:1px solid var(--line-dark);}
+  .contact-list .ic{width:22px;height:22px;color:#fff;flex:none;}
+  .contact-list .ic svg{width:100%;height:100%;}
+  .contact-list .k{font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;color:var(--steel-2);display:block;margin-bottom:2px;}
+  .contact-list .v{font-family:"Cormorant Garamond",serif;font-size:1.25rem;text-decoration:none;color:#fff;}
+
+  form{background:var(--charcoal);border:1px solid var(--line-dark);padding:40px;}
+  .field{margin-bottom:22px;}
+  label{display:block;font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--steel-2);margin-bottom:9px;}
+  input,select,textarea{width:100%;padding:14px 16px;border:1px solid var(--line-dark);border-radius:var(--radius);font-family:inherit;font-size:.98rem;background:var(--charcoal-2);color:#fff;}
+  input::placeholder,textarea::placeholder{color:var(--steel);}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--mist);background:var(--charcoal);}
+  textarea{min-height:120px;resize:vertical;}
+  .form-note{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--steel-2);margin-top:16px;}
+
+  /* Footer */
+  footer.site{background:var(--ink);color:var(--mist);padding:64px 0 34px;border-top:1px solid var(--line-dark);}
+  .footer-inner{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;}
+  footer .brand{margin-bottom:16px;}
+  footer p{margin:0 0 8px;font-size:.8rem;letter-spacing:.06em;color:var(--steel-2);}
+  .footer-links{display:flex;gap:28px;flex-wrap:wrap;}
+  .footer-links a{text-decoration:none;color:var(--mist);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;}
+  .footer-links a:hover{color:#fff;}
+  .footer-bottom{border-top:1px solid var(--line-dark);margin-top:40px;padding-top:24px;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--steel);text-align:center;}
+
+  @media(max-width:880px){
+    .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--ink);flex-direction:column;padding:24px 32px;gap:20px;border-bottom:1px solid var(--line-dark);align-items:flex-start;}
+    .nav-links.open{display:flex;}
+    .menu-toggle{display:block;}
+    .hero-inner,.about-inner,.contact-inner{grid-template-columns:1fr;}
+    .service-grid,.why-grid,.quotes{grid-template-columns:1fr;}
+    .service{border-right:none!important;border-bottom:1px solid var(--line-dark)!important;}
+    .service:last-child{border-bottom:none!important;}
+    .why-cell,.quote{padding:36px 28px;}
+    .hero-meta div{border-right:none;padding-right:0;margin-right:0;}
+  }
+  /* --- routed detail views --- */
+  .route{display:none;}
+  .route:target{display:block;}
+  .route:target ~ #view-home{display:none;}
+  .page-hero{position:relative;background:var(--ink);overflow:hidden;border-bottom:1px solid var(--line-dark);}
+  .page-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(120% 90% at 82% 0%,rgba(150,158,168,.18),transparent 55%);}
+  .page-hero .inner{position:relative;max-width:var(--max);margin:0 auto;padding:64px 32px 76px;}
+  .backlink{font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--steel-2);text-decoration:none;display:inline-block;margin-bottom:34px;background:none;border:none;cursor:pointer;font-family:inherit;padding:0;}
+  .backlink:hover{color:#fff;}
+  .backlink .arw{display:inline-block;margin-right:8px;}
+  .page-hero h1{font-size:clamp(2.6rem,5.5vw,4.2rem);margin:16px 0 20px;font-weight:400;color:#fff;}
+  .page-hero .lede{font-size:1.15rem;color:var(--mist);max-width:52ch;font-weight:300;margin:0;}
+  .detail{padding:76px 0;}
+  .offer{display:grid;grid-template-columns:64px 1fr;gap:28px;padding:38px 0;border-top:1px solid var(--line-dark);}
+  .offer:last-child{border-bottom:1px solid var(--line-dark);}
+  .offer .idx{font-family:"Cormorant Garamond",serif;font-size:1.5rem;color:var(--steel-2);}
+  .offer h3{font-size:1.7rem;margin:0 0 10px;color:#fff;font-weight:500;}
+  .offer p{margin:0;color:var(--steel-2);font-weight:300;font-size:1.02rem;max-width:64ch;}
+  .others{background:var(--charcoal);border-top:1px solid var(--line-dark);padding:72px 0;}
+  .others .kicker{display:block;text-align:center;margin-bottom:34px;}
+  .others-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-dark);border:1px solid var(--line-dark);}
+  .others-grid a{background:var(--charcoal);padding:32px 28px;text-decoration:none;transition:background .25s;display:block;}
+  .others-grid a:hover{background:var(--ink);}
+  .others-grid .n{font-family:"Cormorant Garamond",serif;color:var(--steel-2);font-size:.95rem;}
+  .others-grid h4{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:1.35rem;color:#fff;margin:10px 0 0;}
+  .page-cta{background:var(--ink);text-align:center;padding:90px 0;}
+  .page-cta h2{font-size:clamp(2rem,4.5vw,3rem);color:#fff;font-weight:400;margin:14px 0 26px;}
+  .page-cta .btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+  @media(max-width:880px){.offer{grid-template-columns:1fr;gap:10px;}.others-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="nav">
+    <a href="#top" class="brand"><span class="mark">Q</span><span class="bname">Que&nbsp;La&nbsp;Femme</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#services">Services</a>
+      <a href="#why">Approach</a>
+      <a href="#about">About</a>
+      <a href="#areas">Coverage</a>
+      <a href="#contact" class="navbtn">Enquire</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+  </div>
+</header>
+
+<section class="route" id="maintenance">
+  <div class="page-hero"><div class="inner">
+    <a class="backlink" href="#services"><span class="arw">←</span> All Services</a>
+    <span class="kicker">01 — Maintenance</span>
+    <h1>Home Maintenance Services</h1>
+    <p class="lede">The full upkeep of a home under one roof — cleaning, repairs, gardens, painting, small-space design, and moves. One studio, one standard, and one person accountable for all of it.</p>
+  </div></div>
+  <div class="detail"><div class="wrap">
+      <div class="offer"><div class="idx">01</div><div><h3>House Cleaning</h3><p>Exacting, dependable cleaning on a schedule that suits your household — recurring, seasonal, or on demand. Deep and seasonal cleans, move-in and move-out, for condos, homes, and pieds-à-terre.</p></div></div>
+      <div class="offer"><div class="idx">02</div><div><h3>Minor Household Repairs</h3><p>Furniture repairs, upholstery, and other small household fixes — including deck repair and patching. The little jobs that never quite get done, finally handled.</p></div></div>
+      <div class="offer"><div class="idx">03</div><div><h3>Garden Maintenance</h3><p>Planting and pruning, seasonal care, and fall and spring clean-ups that keep your outdoor space as considered as the rooms inside.</p></div></div>
+      <div class="offer"><div class="idx">04</div><div><h3>Small-Space Solutions</h3><p>Creative answers for compact living — whether custom shelving or clever use of what you already own. Save space, save money.</p></div></div>
+      <div class="offer"><div class="idx">05</div><div><h3>Interior Painting</h3><p>Guidance on colour schemes, careful preparation, and clean painting — from a single accent wall to a full refresh.</p></div></div>
+      <div class="offer"><div class="idx">06</div><div><h3>Relocation &amp; Moves</h3><p>Moving logistics, packing, and unpacking — managed end to end so that a move feels effortless.</p></div></div>
+  </div></div>
+  <div class="others"><div class="wrap">
+    <span class="kicker">Also from the studio</span>
+    <div class="others-grid">
+        <a href="#organization"><span class="n">02 — Order</span><h4>Home Organization</h4></a>
+        <a href="#estates"><span class="n">03 — Transition</span><h4>Estate Management</h4></a>
+        <a href="#bookkeeping"><span class="n">04 — Ledger</span><h4>Bookkeeping</h4></a>
+    </div>
+  </div></div>
+  <div class="page-cta"><div class="wrap">
+    <span class="kicker">Enquiries</span>
+    <h2>Let&#39;s discuss your home</h2>
+    <div class="btns">
+      <a href="#contact" class="btn light">Request Consultation</a>
+      <a href="#services" class="btn outline-light">All Services</a>
+    </div>
+  </div></div>
+</section>
+
+<section class="route" id="organization">
+  <div class="page-hero"><div class="inner">
+    <a class="backlink" href="#services"><span class="arw">←</span> All Services</a>
+    <span class="kicker">02 — Order</span>
+    <h1>Home Organization</h1>
+    <p class="lede">Considered, functional order — spaces designed around how you actually live, and then kept that way. Calm rooms, clear surfaces, and systems that hold under real life.</p>
+  </div></div>
+  <div class="detail"><div class="wrap">
+      <div class="offer"><div class="idx">01</div><div><h3>Closets, Pantries &amp; Kitchens</h3><p>Beautiful, workable systems for the rooms and spaces you use most — arranged so everything has a place and stays in it.</p></div></div>
+      <div class="offer"><div class="idx">02</div><div><h3>Decluttering</h3><p>A calm, judgment-free sort that clears what no longer serves you and gives everything you keep a proper home.</p></div></div>
+      <div class="offer"><div class="idx">03</div><div><h3>Paper &amp; Storage Solutions</h3><p>Filing, document management, and storage designed to end the paper pile and the junk-drawer chaos for good.</p></div></div>
+      <div class="offer"><div class="idx">04</div><div><h3>Systems That Last</h3><p>Organization built to endure — routines and structures that survive busy weeks, not just look good on day one.</p></div></div>
+  </div></div>
+  <div class="others"><div class="wrap">
+    <span class="kicker">Also from the studio</span>
+    <div class="others-grid">
+        <a href="#maintenance"><span class="n">01 — Maintenance</span><h4>Home Maintenance Services</h4></a>
+        <a href="#estates"><span class="n">03 — Transition</span><h4>Estate Management</h4></a>
+        <a href="#bookkeeping"><span class="n">04 — Ledger</span><h4>Bookkeeping</h4></a>
+    </div>
+  </div></div>
+  <div class="page-cta"><div class="wrap">
+    <span class="kicker">Enquiries</span>
+    <h2>Let&#39;s discuss your home</h2>
+    <div class="btns">
+      <a href="#contact" class="btn light">Request Consultation</a>
+      <a href="#services" class="btn outline-light">All Services</a>
+    </div>
+  </div></div>
+</section>
+
+<section class="route" id="estates">
+  <div class="page-hero"><div class="inner">
+    <a class="backlink" href="#services"><span class="arw">←</span> All Services</a>
+    <span class="kicker">03 — Transition</span>
+    <h1>Estate Management</h1>
+    <p class="lede">Composed, confidential handling of the estate and downsizing — organized from the first sort to the final sale. Handled quietly, respectfully, and without adding to a difficult time.</p>
+  </div></div>
+  <div class="detail"><div class="wrap">
+      <div class="offer"><div class="idx">01</div><div><h3>Sorting &amp; Cataloguing</h3><p>A careful, respectful first sort of a lifetime's belongings — catalogued and organized so that nothing of value or meaning is overlooked.</p></div></div>
+      <div class="offer"><div class="idx">02</div><div><h3>Staging &amp; Valuation</h3><p>Thoughtful presentation and fair valuation of items, so the estate is shown at its best and priced with care.</p></div></div>
+      <div class="offer"><div class="idx">03</div><div><h3>Estate Sale Management</h3><p>The sale itself, managed from the first sort to the final sale — set-up, pricing, oversight, and wind-down.</p></div></div>
+      <div class="offer"><div class="idx">04</div><div><h3>Downsizing &amp; Clear-Outs</h3><p>Measured downsizing and full clear-outs, handled with discretion and an eye for what deserves to be kept.</p></div></div>
+      <div class="offer"><div class="idx">05</div><div><h3>Discretion Throughout</h3><p>Every estate is handled quietly and in confidence, with respect for the family and the moment.</p></div></div>
+  </div></div>
+  <div class="others"><div class="wrap">
+    <span class="kicker">Also from the studio</span>
+    <div class="others-grid">
+        <a href="#maintenance"><span class="n">01 — Maintenance</span><h4>Home Maintenance Services</h4></a>
+        <a href="#organization"><span class="n">02 — Order</span><h4>Home Organization</h4></a>
+        <a href="#bookkeeping"><span class="n">04 — Ledger</span><h4>Bookkeeping</h4></a>
+    </div>
+  </div></div>
+  <div class="page-cta"><div class="wrap">
+    <span class="kicker">Enquiries</span>
+    <h2>Let&#39;s discuss your home</h2>
+    <div class="btns">
+      <a href="#contact" class="btn light">Request Consultation</a>
+      <a href="#services" class="btn outline-light">All Services</a>
+    </div>
+  </div></div>
+</section>
+
+<section class="route" id="bookkeeping">
+  <div class="page-hero"><div class="inner">
+    <a class="backlink" href="#services"><span class="arw">←</span> All Services</a>
+    <span class="kicker">04 — Ledger</span>
+    <h1>Bookkeeping</h1>
+    <p class="lede">Decades of corporate finance, applied to your books — clean, current, and quietly kept. The same precision brought to your home, brought to your accounts.</p>
+  </div></div>
+  <div class="detail"><div class="wrap">
+      <div class="offer"><div class="idx">01</div><div><h3>Monthly Bookkeeping</h3><p>Your books maintained and reconciled month over month, so you always know where things stand.</p></div></div>
+      <div class="offer"><div class="idx">02</div><div><h3>Invoicing &amp; Expense Tracking</h3><p>Invoices sent, expenses tracked, and receipts kept in order — no more shoebox at year-end.</p></div></div>
+      <div class="offer"><div class="idx">03</div><div><h3>Reconciliations &amp; Reporting</h3><p>Accurate reconciliations and clear, readable reports that make sense of the numbers.</p></div></div>
+      <div class="offer"><div class="idx">04</div><div><h3>Tax-Season Preparation</h3><p>Everything organized and ready before your accountant asks — a calmer, cheaper tax season.</p></div></div>
+      <div class="offer"><div class="idx">05</div><div><h3>Business &amp; Household</h3><p>Suited to small businesses and private households alike, at whatever scale you need.</p></div></div>
+  </div></div>
+  <div class="others"><div class="wrap">
+    <span class="kicker">Also from the studio</span>
+    <div class="others-grid">
+        <a href="#maintenance"><span class="n">01 — Maintenance</span><h4>Home Maintenance Services</h4></a>
+        <a href="#organization"><span class="n">02 — Order</span><h4>Home Organization</h4></a>
+        <a href="#estates"><span class="n">03 — Transition</span><h4>Estate Management</h4></a>
+    </div>
+  </div></div>
+  <div class="page-cta"><div class="wrap">
+    <span class="kicker">Enquiries</span>
+    <h2>Let&#39;s discuss your home</h2>
+    <div class="btns">
+      <a href="#contact" class="btn light">Request Consultation</a>
+      <a href="#services" class="btn outline-light">All Services</a>
+    </div>
+  </div></div>
+</section>
+
+<a id="top"></a>
+<main id="view-home">
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <span class="kicker">Downtown Toronto · By Appointment</span>
+      <h1>Meticulous care,<br><em>quietly delivered.</em></h1>
+      <p class="lede">Que La Femme is a discreet home-management studio for the city's most demanding addresses — cleaning, organization, estate management, and bookkeeping, held to a single standard: flawless.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn light">Request Consultation</a>
+        <a href="#services" class="btn outline-light">View Services</a>
+      </div>
+      <div class="hero-meta">
+        <div><b>04</b><span>Disciplines</span></div>
+        <div><b>GTA</b><span>Coverage</span></div>
+        <div><b>Private</b><span>&amp; Insured</span></div>
+      </div>
+    </div>
+    <aside class="hero-panel">
+      <h3>The Studio</h3>
+      <p>Four disciplines. One point of contact.</p>
+      <ul>
+        <li><a href="#maintenance">Home Maintenance <span class="n">01</span></a></li>
+        <li><a href="#organization">Organization <span class="n">02</span></a></li>
+        <li><a href="#estates">Estate Management <span class="n">03</span></a></li>
+        <li><a href="#bookkeeping">Bookkeeping <span class="n">04</span></a></li>
+      </ul>
+      <a href="#contact" class="btn light" style="width:100%;text-align:center;">Begin</a>
+    </aside>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Services</span>
+      <h2>Four disciplines, one standard</h2>
+      <p>From a weekly maintenance schedule to the full management of an estate, the work is precise, discreet, and handled directly.</p>
+    </div>
+    <div class="service-grid">
+
+      <a class="service" href="#maintenance">
+        <div class="num">01 — Maintenance</div>
+        <h3>Home Maintenance Services</h3>
+        <p>The full upkeep of a home — cleaning, repairs, gardens, painting, small-space design, and moves — held to one standard.</p>
+        <ul>
+          <li>House cleaning</li>
+          <li>Minor household repairs</li>
+          <li>Gardens &amp; seasonal clean-ups</li>
+          <li>Painting · small spaces · moves</li>
+        </ul>
+        <span class="more">View details<span class="arw">→</span></span>
+      </a>
+
+      <a class="service" href="#organization">
+        <div class="num">02 — Order</div>
+        <h3>Home Organization</h3>
+        <p>Considered, functional order — spaces designed around how you actually live, then kept that way.</p>
+        <ul>
+          <li>Closets, pantries &amp; kitchens</li>
+          <li>Decluttering &amp; lasting systems</li>
+          <li>Paper &amp; storage solutions</li>
+          <li>Systems that hold</li>
+        </ul>
+        <span class="more">View details<span class="arw">→</span></span>
+      </a>
+
+      <a class="service" href="#estates">
+        <div class="num">03 — Transition</div>
+        <h3>Estate Management</h3>
+        <p>Composed, confidential handling of the estate and downsizing — organized from the first sort to the final sale.</p>
+        <ul>
+          <li>Sorting, staging &amp; valuation</li>
+          <li>Estate sale management</li>
+          <li>Downsizing &amp; clear-outs</li>
+          <li>Discreet, respectful service</li>
+        </ul>
+        <span class="more">View details<span class="arw">→</span></span>
+      </a>
+
+      <a class="service" href="#bookkeeping">
+        <div class="num">04 — Ledger</div>
+        <h3>Bookkeeping</h3>
+        <p>Decades of corporate finance, applied to your books — clean, current, and quietly kept.</p>
+        <ul>
+          <li>Monthly bookkeeping</li>
+          <li>Invoicing &amp; expense tracking</li>
+          <li>Reconciliations &amp; reporting</li>
+          <li>Tax-season preparation</li>
+        </ul>
+        <span class="more">View details<span class="arw">→</span></span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">The Approach</span>
+      <h2>Discretion is the service</h2>
+      <p>When someone is inside your home or handling your accounts, trust isn't a feature. It's the entire proposition.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-cell">
+        <div class="ic"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="14" y="20" width="20" height="18"/><path d="M18 20v-4a6 6 0 0112 0v4"/><circle cx="24" cy="28" r="2"/></svg></div>
+        <h3>Confidential</h3>
+        <p>Vetted, insured, and bound to absolute privacy. What happens in your home stays there.</p>
+      </div>
+      <div class="why-cell">
+        <div class="ic"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M24 8l4 12 12 4-12 4-4 12-4-12-12-4 12-4z"/></svg></div>
+        <h3>Exacting</h3>
+        <p>The details others overlook are the ones we're hired for. Nothing is left half-finished.</p>
+      </div>
+      <div class="why-cell">
+        <div class="ic"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="24" cy="24" r="16"/><path d="M16 24l6 6 10-12"/></svg></div>
+        <h3>Direct</h3>
+        <p>You deal with the principal — one accountable point of contact, start to finish.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap about-inner">
+    <div class="frame"><img src="founder.png" alt="Melissa Kalef, founder of Que La Femme" /></div>
+    <div>
+      <span class="kicker">The Principal</span>
+      <h2>Melissa Kalef,<br><em>founder.</em></h2>
+      <p>I launched Que La Femme after decades in corporate finance — for people who expect their home and affairs to be handled properly: quietly, precisely, and without having to ask twice.</p>
+      <p>I give homeowners and tenants a way through the tasks that feel daunting, bringing creativity and organization where others' strengths lie elsewhere. My promise is reliability, discretion, and a level of care usually reserved for family and friends.</p>
+      <p class="sign">Melissa Kalef</p>
+    </div>
+  </div>
+</section>
+
+<section class="areas" id="areas">
+  <div class="wrap">
+    <span class="kicker">Coverage</span>
+    <h2>Downtown by base — <em>the GTA by appointment</em></h2>
+    <p>Rooted in the core and mobile across the region. From a King West tower to a home in the suburbs, the studio comes to you.</p>
+    <div class="area-tags">
+      <span>Downtown &amp; Core</span>
+      <span>King West</span>
+      <span>Yorkville · Annex</span>
+      <span>Leslieville · Beaches</span>
+      <span>Leaside · East York</span>
+      <span>North York</span>
+      <span>Etobicoke</span>
+      <span>Scarborough</span>
+      <span>Mississauga</span>
+      <span>Vaughan · Markham</span>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-inner">
+    <div class="contact-info">
+      <span class="kicker">Enquiries</span>
+      <h2>Request a consultation</h2>
+      <p>Tell us what you need. We reply within one business day, in confidence.</p>
+      <ul class="contact-list">
+        <li>
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="5" width="18" height="14"/><path d="M3 6l9 7 9-7"/></svg></span>
+          <div><span class="k">General enquiries</span><a class="v" href="mailto:hello@quelafemme.com">hello@quelafemme.com</a></div>
+        </li>
+        <li>
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></span>
+          <div><span class="k">Melissa, directly</span><a class="v" href="mailto:melissa@quelafemme.com">melissa@quelafemme.com</a></div>
+        </li>
+        <li>
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.4"/></svg></span>
+          <div><span class="k">Location</span><span class="v">Toronto, Ontario</span></div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- To route submissions to an inbox, create a free form at formspree.io and
+         paste its endpoint into the action below. Until then, it opens the
+         visitor's email client via the mailto fallback. -->
+    <form action="mailto:hello@quelafemme.com" method="post" enctype="text/plain">
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Full name" required />
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@email.com" required />
+      </div>
+      <div class="field">
+        <label for="phone">Telephone</label>
+        <input type="tel" id="phone" name="phone" placeholder="(416) 000-0000" />
+      </div>
+      <div class="field">
+        <label for="service">Discipline</label>
+        <select id="service" name="service">
+          <option>Home Maintenance Services</option>
+          <option>Home Organization</option>
+          <option>Estate Management</option>
+          <option>Bookkeeping</option>
+          <option>Undecided</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="message">Details</label>
+        <textarea id="message" name="message" placeholder="A few words about your home or project."></textarea>
+      </div>
+      <button type="submit" class="btn light" style="width:100%;">Send Enquiry</button>
+      <p class="form-note">Held in confidence · No obligation</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-inner">
+      <div>
+        <a href="#top" class="brand"><span class="mark">Q</span><span class="bname">Que&nbsp;La&nbsp;Femme</span></a>
+        <p>Cleaning · Organization · Estates · Bookkeeping</p>
+        <p>Toronto &amp; the Greater Toronto Area</p>
+      </div>
+      <div>
+        <div class="footer-links">
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#areas">Coverage</a>
+          <a href="#contact">Enquire</a>
+        </div>
+        <p style="margin-top:18px;"><a href="mailto:hello@quelafemme.com" style="text-decoration:none;">hello@quelafemme.com</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © <span id="year"></span> Que La Femme · Toronto, ON · Private &amp; Insured
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('menuToggle').addEventListener('click',function(){
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+  document.querySelectorAll('#navLinks a').forEach(function(a){
+    a.addEventListener('click',function(){document.getElementById('navLinks').classList.remove('open');});
+  });
+  document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+
+</body>
+</html>
